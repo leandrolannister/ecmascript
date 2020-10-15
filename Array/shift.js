@@ -9,10 +9,10 @@
 </html>
 <script>
     // Add end of array
-    var nomes = ['Soares', 'Ribeiro'];
+    var nomes = ['soares', 'Ribeiro'];
 
-    nomes.unshift('Leandro');
+    let firstItem = nomes.shift();
 
     console.log(nomes);
-    
+    console.log(firstItem); 
 </script>

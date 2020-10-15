@@ -9,10 +9,10 @@
 </html>
 <script>
     // Add end of array
-    var nomes = ['Soares', 'Ribeiro'];
+    var nomes = ['leandro', 'soares', 'Ribeiro'];
 
-    nomes.unshift('Leandro');
+    let lastItem = nomes.pop();
 
     console.log(nomes);
-    
+    console.log(lastItem); 
 </script>
