@@ -8,5 +8,7 @@
 </body>
 </html>
 <script>
-  
+   if(10 > '3')
+   	alert('true');
+       
 </script>
