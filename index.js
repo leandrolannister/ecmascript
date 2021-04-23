@@ -1,9 +1,11 @@
-function rangeOfNumbers(startNum, endNum) {
-   if(startNum > endNum){ return [] }
- 
-   const array = rangeOfNumbers(startNum, endNum -1);
-   array.push(endNum);
-   return array;
- };
+let catName;
+let quote;
 
- console.log(rangeOfNumbers(1,5));
+function catTalk() {
+  "use strict";
+
+  catName = "Oliver";
+  return quote = catName + " says Meow!";
+
+}
+console.log(catTalk());
