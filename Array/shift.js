@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-</head>
-<body>
+//Remove by the begin of array
+const NOMES = ['Leandro', 'Soares', 'Ribeiro'];
+NOMES.shift('Leandro');
 
-</body>
-</html>
-<script>
-    // Add end of array
-    var nomes = ['soares', 'Ribeiro'];
 
-    let firstItem = nomes.shift();
-
-    console.log(nomes);
-    console.log(firstItem); 
-</script>
+console.log(NOMES);
