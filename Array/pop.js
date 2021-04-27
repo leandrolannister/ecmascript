@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-</head>
-<body>
+//Remove by the end of array
+const NOMES = ['Leandro', 'Soares'];
+NOMES.push('Ribeiro');
 
-</body>
-</html>
-<script>
-    // Add end of array
-    var nomes = ['leandro', 'soares', 'Ribeiro'];
+NOMES.pop();
 
-    let lastItem = nomes.pop();
-
-    console.log(nomes);
-    console.log(lastItem); 
-</script>
+console.log(NOMES);
