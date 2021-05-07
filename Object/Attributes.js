@@ -3,7 +3,8 @@ const motos = {
     "600 cilindradas": "sv",
     3: "R$ 20.000",
     fornecedor: "J toledo",
-    opcoes: ['Vstrong', 'Bandit', 'Intruder']    
+    opcoes: ['Vstrong', 'Bandit', 'Intruder'],
+    seguro: true    
 }
 
 console.log('Marca', motos.marca);
