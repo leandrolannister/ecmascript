@@ -1,3 +1,3 @@
-export default function(arr){
-    return arr.filter(n => !Number.isInteger(n));
+export default function sum(x,y){
+    return x + y;
 }
