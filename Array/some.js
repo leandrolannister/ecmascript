@@ -1,13 +1,7 @@
-const nums = [3,3,3,2];
+const ages = [12,14,34,40];
 
-function par(){
-   for(let row in nums){
-       if(nums[row] % 2 == 0){
-          return true;
-       }
-   }
-   return false;
+function checkAges(age){
+    return age > 18;
 }
 
-console.log(nums.some( par ));
-
+console.log(ages.some(checkAges));
