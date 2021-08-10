@@ -9,3 +9,4 @@ Seleciona + Ctrl + d -> Seleciona as palavras(selecionadas) uma de cada vez
 Ctrl + shift + k -> Apaga a linha(s) selecionadas
 Ctrl + ; -> add atalho ou remove(windows)
 Ctrl + k + s => Atalho para os alias de teclado
+Ctrl + e -> Executa a query
