@@ -1,10 +1,5 @@
-// Ordenar considerando apenas numeros em um array de numeros e letras
-const values = [];
-
-values.push('x' + 12);
-values.push(10 + 'l');
-values.push(2 + 'f');
-values.push(1 + 'b');
+// Ordenar considerando apenas as letras em um array de numeros e letras
+ ;
 
 values.sort(function(a,b){
   return a.replace(/[^0-9]/g, '') - b.replace(/[^0-9]/g, '');
