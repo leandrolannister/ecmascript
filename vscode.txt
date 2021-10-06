@@ -10,3 +10,4 @@ Ctrl + shift + k -> Apaga a linha(s) selecionadas
 Ctrl + ; -> add atalho ou remove(windows)
 Ctrl + k + s => Atalho para os alias de teclado
 Ctrl + e -> Executa a query
+Ctrl + Shift + Alt + (↑ ou → ou ↓ ou ←) => Seleciona linhas no teclado
