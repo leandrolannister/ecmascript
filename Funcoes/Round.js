@@ -1,9 +1,5 @@
 // Aredonda para inteiro
 
-function ganhoPorHora(salario, horasTrabalhadasNoMes) {
-    const salarioHora = (salario / horasTrabalhadasNoMes); 
-  
-    return Math.round(salarioHora);
-}
+console.log(Math.round(4.3));
 
-console.log(ganhoPorHora(3000,176)); 
+console.log(Math.round(4.5));
