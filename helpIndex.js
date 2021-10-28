@@ -1,16 +1,15 @@
-var Stack = function() {
-   this.count = 0;
-   this.storage = {};
+function mySet(){
+   let collection = [];
 
-   //add
-   this.push = function(value) {
-      this.storage[this.count] = value;
-      this.count++;
-   }
+   this.add = function(element){
+      if(this.has(element)){
+
+      }
+   }  
+   
+   
 }
 
-const t = new Stack();
-t.push(1);
-t.push(2);
-console.log(t.storage);
-
+let set = new mySet();
+set.has(1);
+console.log(set.values());

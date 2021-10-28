@@ -1,7 +1,7 @@
 Ctrl + espaço -> abre cx de opções
 Ctrl + -> Aumenta a tela
 Ctrl - -> Diminui
-Ctrl + alt + f -> Identa o documento
+Shift + alt + f -> Identa o documento
 Alt + z -> Quebra de linha: quebra um texto grande na mesma linha
 Alt + setas(up ou down): move o codigo para cima ou baixo
 Seleciona + Ctrl + f2 -> Seleciona todas as palavras(selecionadas)
