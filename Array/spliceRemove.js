@@ -1,7 +1,9 @@
-let nomes = ['Nadia', 'Ellen', 'Beta', 'Mary', 'Camila'];
+const str = ['b','d','j','x','v'];
 
-//1=>Index Array
-//3->Removidos a partir do index
-nomes.splice(1,3);
+const REMOVE_ITEM = 1;
 
-console.log(nomes);
+//2->index of array
+str.splice(2,REMOVE_ITEM);
+
+console.log(str);
+

@@ -1,11 +1,8 @@
-let nomes = ['Nadia', 'Ellen'];
+const str = ['b','d','j'];
 
-//1 -> index array
-//0 = mantenha os valoes do array
-nomes.splice(1,0, 'Beta');
+//Significa que um vl será add no array
+const ADD_VALORES = 0;
 
-console.log(nomes);
+//1->index of array
+str.splice(1,ADD_VALORES, 'c');
 
-nomes.splice(2,0, 'Mary', 'Camila');
-
-console.log(nomes);
