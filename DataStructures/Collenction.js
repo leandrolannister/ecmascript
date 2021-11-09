@@ -18,14 +18,14 @@ function mySet(){
    }
  
    this.remove = function(element){
+      const REMOVE_ELEMENT = 1;
       if(this.has(element)){
-         return false;    
+         return;    
       }
- 
-      let indexArr = collection.indexOf(element);
-      collection.splice(indexArr,1);
- 
-      return true;
+      
+      collection.splice(
+         collection.indexOf(element),REMOVE_ELEMENT
+      );
    }
  }
  
