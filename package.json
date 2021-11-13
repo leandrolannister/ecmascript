@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/leandrolannister/ecmascript/issues"
   },
-  "homepage": "https://github.com/leandrolannister/ecmascript#readme"
+  "homepage": "https://github.com/leandrolannister/ecmascript#readme",
+  "dependencies": {
+    "node-fetch": "^3.1.0"
+  }
 }

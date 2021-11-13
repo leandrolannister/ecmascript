@@ -6,11 +6,12 @@
      window
        .fetch(url)
        .then( (data) => {
-          return data.json();
-       }).then((adress) => {
-          console.log('Adress', adress);
-       })
-       .catch( (err) => {
+          data.json().then( (adress) => {
+             console.log('Adress', adress);
+          }).catch( (err) => {
+              console.log('Err', err);
+          })
+       }).catch( (err) => {
           console.log('Error', err);
        });
 </script>    
