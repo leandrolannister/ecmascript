@@ -1,74 +1,60 @@
-//Time: 14.51
-function mySet() {
+const mySet = function(){
     let collection = [];
- 
-    this.has = function (element) {
-        return (collection.indexOf(element) === -1)
-    };
- 
-    this.values = () => {
-        return collection;
+
+    this.has = function(value){
+        return (collection.indexOf(value) == -1);
     }
- 
-    this.add = function (element) {
-        if (this.has(element)) {
-            collection.push(element);
+
+    this.add = function(value){
+        if(this.has(value)){
+           collection.push(value);    
         }
-        return;
     }
- 
-    this.remove = function (element) {
-        const REMOVE_ELEMENT = 1;
-        if (this.has(element)) {
-            return;
-        }
- 
+
+    this.show  = () => {
+        console.log(collection);
+    }
+
+    this.remove = function(value){
+        if(this.has(value))
+          return;
+
         collection.splice(
-            collection.indexOf(element), REMOVE_ELEMENT
-        );
+            collection.indexOf(value),1
+        )  
     }
- 
-    this.size = () => {
-        return collection.length;
-    }
- 
-    this.union = function () {
-        let unionSet = new mySet();
-        const otherSet = [2,1];
- 
-        collection.forEach((v) => {
-            unionSet.add(v);
-        });
- 
-        otherSet.forEach((v) => {
-            unionSet.add(v);
-        });
- 
-        return unionSet.values();
-    }
- 
-    this.difference = function(){
-     const otherSet = new mySet();
-     otherSet.add(1); 
-     otherSet.add(3);
- 
-     collection.forEach((v) => {
-       if (otherSet.has(v)){
-          otherSet.add(v);
+
+    this.union = () => {
+       const arr = [1,2,3,4];
+
+       for(let row in arr){
+         if(this.has(arr[row])){
+           collection.push(arr[row]);    
+         }
        }
-     });       
-     return otherSet.values();
-  }
- }
- 
- let set = new mySet();
- set.add(1);
- set.add(2);
- set.add(3);
- set.remove(2);
- set.union();
- console.log('Union:', set.union());
- console.log('Size:', set.size());
- console.log('Values:', set.values());
- console.log('Difference:', set.difference());
- 
+    }
+
+    this.diff = () => {
+        const arr = [1,2,5,3,8];
+        const diff = [];
+
+        arr.forEach( (v) => {
+           if(this.has(v)){
+               diff.push(v);
+           }   
+        });
+        console.log('Diffs:', diff);
+    }
+
+    this.size = () => {
+       console.log('Size of Collenction:', collection.length);
+    }
+}
+let set = new mySet();
+set.add(1);
+set.add(2);
+set.remove(1);
+set.union();
+set.show();
+set.diff();
+set.size();
