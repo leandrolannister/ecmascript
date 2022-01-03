@@ -1,8 +1,9 @@
-const str = ['b','d','j'];
+const arr = [1,3,5];
 
-//Significa que um vl será add no array
-const ADD_VALORES = 0;
+let index_of_array = 1;
+let action = 0; //0->Add
+let value = 2;
 
-//1->index of array
-str.splice(1,ADD_VALORES, 'c');
+arr.splice(index_of_array,action,value);
 
+console.log(arr);

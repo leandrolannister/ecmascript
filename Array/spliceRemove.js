@@ -1,9 +1,8 @@
-const str = ['b','d','j','x','v'];
+const arr = [1,2,3,50];
 
-const REMOVE_ITEM = 1;
+let index_of_array = 3;
+let action = 1; //0->Add
 
-//2->index of array
-str.splice(2,REMOVE_ITEM);
+arr.splice(index_of_array,action);
 
-console.log(str);
-
+console.log(arr);

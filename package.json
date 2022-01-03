@@ -1,19 +1,21 @@
 {
-  "name": "ecmascript",
+  "name": "nodestudy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leandrolannister/ecmascript.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/leandrolannister/ecmascript/issues"
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "^4.17.1",
+    "marko": "4.13.4-1",
+    "sqlite3": "5.0.2"
   },
-  "homepage": "https://github.com/leandrolannister/ecmascript#readme"
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
 }

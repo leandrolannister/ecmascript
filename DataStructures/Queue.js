@@ -1,17 +1,21 @@
-//Time: 20:06
-function Queue() {
-    const collenction = [];
+const Queue = function(){
+    const arr = [];
 
-    this.enqueue = function (v) {
-        collenction.push(v);
+    this.add = (value) => {
+        arr.unshift(value);
     }
 
-    this.print = () => {
-        console.log(collenction);
+    this.show = () => {
+        console.log(arr);
+    }
+
+    this.delete = () => {
+        arr.shift();
     }
 }
 
-let c = new Queue();
-c.enqueue(1);
-c.enqueue(2);
-c.print();
+let q = new Queue();
+q.add(1);
+q.add(2);
+q.delete();
+q.show();
