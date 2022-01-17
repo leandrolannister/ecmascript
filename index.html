@@ -9,13 +9,13 @@
 </head>
 
 <body>
-   <div id="user" data-id="123" data-name="leandro.soares">
-      Leandro Soares
-   </div>
+   <article id="electriccars" data-columns="3" data-index-number="12314"
+            data-parent="cars"> 
+   </article>
    <script>
-      const element = document.getElementById('user');
-      console.log('Id', element.dataset.id);
-      console.log('Name', element.dataset.name);
+      const element = document.getElementById('electriccars');
+      console.log('Columns', element.dataset.columns);
+      console.log('Index', element.dataset.indexNumber);
+      console.log('Cars', element.dataset.parent);
    </script>
-
 </html>

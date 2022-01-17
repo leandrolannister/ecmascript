@@ -1,4 +1,3 @@
-//Time: 18:43
 const mySet = function () {
     let collection = [];
   
