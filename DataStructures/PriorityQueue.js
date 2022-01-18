@@ -24,7 +24,6 @@ function PriorityQueue() {
 }
 
 let priority = new PriorityQueue();
-priority.orderBy(['Jophef', 4]);
 priority.orderBy(['Ribeiro', 3]);
 priority.orderBy(['Soares', 2]);
 priority.orderBy(['Leandro', 1]);
