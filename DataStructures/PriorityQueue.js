@@ -1,33 +1,35 @@
-function PriorityQueue() {
-    let collenction = [];
+const Priority = function(){
+    let arr = [];
 
     this.show = () => {
-        (console.log(collenction));
+        console.log(arr);
     }
 
-    this.add = (element) => {
-        collenction.push(element);
+    this.push = (element) => {
+        arr.push(element);    
     }
 
-    this.orderBy = (element) =>{
-       if (collenction.length === 0){
-           collenction.push(element);
-       }else {
-           for(let row=0; row < collenction.length; row++){
-              if (element[1] < collenction[row][1]){
-                  collenction.splice(row,0,element);                  
-                  break;
-              }     
-           }
-       }
+    this.order = (element) => {
+        //if (arr.length == 0){
+            this.push(element)
+        //}else {
+            for (let row = 0; row < arr.length; row++){
+                  arr.sort(this.orderBy);
+            }
+        //}
+    }
+
+    this.orderBy = (a,b) => {
+        if (a[1] < b[1]) return -1;
+        if (a[1] > b[1]) return 1;
+        return 0;
     }
 }
 
-let priority = new PriorityQueue();
-priority.orderBy(['Ana', 4]);
-priority.orderBy(['Ribeiro', 3]);
-priority.orderBy(['Soares', 2]);
-priority.orderBy(['Leandro', 1]);
-priority.show();
-
-
+const p = new Priority();
+p.order(['Soares',2]);
+p.order(['Ribeiro',3]);
+p.order(['Leandro',1]);
+p.order(['Ana',0]);
+p.order(['Bruno',10]);
+p.show();
