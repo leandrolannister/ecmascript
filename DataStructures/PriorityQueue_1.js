@@ -1,4 +1,3 @@
-//It is better than old version
 const Priority = function(){
     const arr = [];
 
