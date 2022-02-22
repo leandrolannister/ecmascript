@@ -1,5 +1,6 @@
-const arr = [0,2,3];
+function person(age,name){
+   console.log(`Nome: ${name}`);
+   console.log(`Age: ${age}`);
+}
 
-arr.splice(1,0,1);
-
-console.log(arr);
+person('34','Leandro');
